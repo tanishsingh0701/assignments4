@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignments4';
+  oddNumber:number[]=[];
+  evenNumber:number[]=[];
+
+  onIntervalFired(firedNumber:number)
+  {
+    if(firedNumber % 2===0)
+    {
+      this.evenNumber.push(firedNumber);
+    }
+    else
+    {
+      this.oddNumber.push(firedNumber);
+    }
+  }
 }
